@@ -1,1 +1,252 @@
-hello world
+/ the top head
+.navbar.navbar-fixed-top{:role => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      / Be sure to leave the brand out there if you want it shown
+      %a.navbar-brand{:href => "index.html"} Job Portal
+    / post or upload cv
+    .collapse.navbar-collapse.navbar-ex1-collapse
+      .navbar-left
+        %a.btn.btn-default.navbar-btn{:href => "jobs.html"} Browse all jobs »
+        %a.btn.btn-warning.navbar-btn{:href => "post.html"} Post a job »
+      / the menu
+      .navbar-right
+        %a.btn.btn-default.navbar-btn{:href => "signin.html"} Sign in
+        %a.btn.btn-warning.navbar-btn{:href => "signup.html"} Sign up
+  / /.container
+/ /.navbar
+/ the middle contents
+.contents
+  %section#search-container
+    .container
+      #search-box
+        %h1
+          We currently have
+          %strong 25,011
+          job posts but only
+          %strong 10,111
+          applicants
+        %form.form-inline
+          %input.btn-block{:autofocus => "autofocus", :placeholder => "Example: Software developer", :type => "text"}/
+  %section#featured
+    .container
+      .row
+        .col-xs-12.col-md-3
+          %h3.sub-heading Advance search
+          %form
+            .form-group
+              %label Job category
+              %select.form-control.input-lg
+                %option Networking
+                %option Sales &amp; Marketing
+                %option Teaching
+                %option Programming
+              %small.help-block Help text for job seeker.
+            .form-group
+              %label Location
+              %select.form-control.input-lg
+                %option America
+                %option Europe
+                %option Africa
+                %option Asia
+                %option Oceanic
+              %small.help-block
+            .form-group
+              %label Salary
+              %select.form-control.input-lg
+                %option €1000 - €5000
+                %option €5000 - €10000
+                %option €10000+
+              %small.help-block
+            .row
+              .col-xs-12.col-md-6
+                .checkbox
+                  %label
+                    %input{:type => "checkbox"}/
+                    Freelance
+              .col-xs-12.col-md-6
+                .checkbox
+                  %label
+                    %input{:type => "checkbox"}/
+                    Contract
+            .row
+              .col-xs-12.col-md-6
+                .checkbox
+                  %label
+                    %input{:type => "checkbox"}/
+                    Full time
+              .col-xs-12.col-md-6
+                .checkbox
+                  %label
+                    %input{:type => "checkbox"}/
+                    Part time
+            %br/
+            %button.btn.btn-primary.input-lg.btn-block{:type => "submit"} Search
+        .col-xs-12.col-md-9
+          %h3.sub-heading
+            Featured jobs
+            %span.pull-right
+              %small 1 - 20 results
+          %table.table.table-striped
+            %tbody
+              %tr
+                %td
+                  %p
+                    %a{:href => "job.html"} Junior Applications Engineer
+                    %small.label.label-success Full time
+                  %p Google Enterprises
+                %td.job-location
+                  %p
+                    %i.glyphicon.glyphicon-calendar
+                    20 Jan 2013
+                  %p
+                    %i.glyphicon.glyphicon-map-marker
+                    Berlin, Germany
+              %tr
+                %td
+                  %p
+                    %a{:href => "job.html"} Senior Applications Engineer
+                    %small.label.label-info Freelance
+                  %p Youtube
+                %td.job-location
+                  %p
+                    %i.glyphicon.glyphicon-calendar
+                    22 Jun 2013
+                  %p
+                    %i.glyphicon.glyphicon-map-marker
+                    Dresden, Germany
+              %tr.featured
+                %td
+                  %p
+                    %a{:href => "job.html"} Software Engineer
+                    %small.label.label-warning Part time
+                  %p Tesco Mall
+                %td.job-location
+                  %p
+                    %i.glyphicon.glyphicon-calendar
+                    01 Feb 2013
+                  %p
+                    %i.glyphicon.glyphicon-map-marker
+                    Amsterdam, Holland
+              %tr.featured
+                %td
+                  %p
+                    %a{:href => "job.html"} Front-end Developer
+                    %small.label.label-success Full time
+                  %p Apple inc.
+                %td.job-location
+                  %p
+                    %i.glyphicon.glyphicon-calendar
+                    15 May 2013
+                  %p
+                    %i.glyphicon.glyphicon-map-marker
+                    Bruge, Belgium
+              %tr
+                %td
+                  %p
+                    %a{:href => "job.html"} Back-end Developer
+                    %small.label.label-success Full time
+                  %p Air France
+                %td.job-location
+                  %p
+                    %i.glyphicon.glyphicon-calendar
+                    10 May 2013
+                  %p
+                    %i.glyphicon.glyphicon-map-marker
+                    Paris, France
+              %tr
+                %td
+                  %p
+                    %a{:href => "job.html"} PHP Programmer
+                    %small.label.label-warning Part time
+                  %p Wizz Air
+                %td.job-location
+                  %p
+                    %i.glyphicon.glyphicon-calendar
+                    25 Jan 2013
+                  %p
+                    %i.glyphicon.glyphicon-map-marker
+                    Oslo, Norway
+              %tr
+                %td
+                  %p
+                    %a{:href => "job.html"} HMTL5/CSS3/JavaScript Coder
+                    %small.label.label-info Freelance
+                  %p Small Agency
+                %td.job-location
+                  %p
+                    %i.glyphicon.glyphicon-calendar
+                    19 Mar 2013
+                  %p
+                    %i.glyphicon.glyphicon-map-marker
+                    Califonia, USA
+              %tr
+                %td
+                  %p
+                    %a{:href => "job.html"} Java Programmer
+                    %small.label.label-info Freelance
+                  %p Google Enterprises
+                %td.job-location
+                  %p
+                    %i.glyphicon.glyphicon-calendar
+                    08 Jul 2013
+                  %p
+                    %i.glyphicon.glyphicon-map-marker
+                    Berlin, Germany
+              %tr
+                %td
+                  %p
+                    %a{:href => "job.html"} IOS Developer
+                    %small.label.label-info Freelance
+                  %p 6wunderers
+                %td.job-location
+                  %p
+                    %i.glyphicon.glyphicon-calendar
+                    11 Feb 2013
+                  %p
+                    %i.glyphicon.glyphicon-map-marker
+                    Frankfurt, Germany
+              %tr.featured
+                %td
+                  %p
+                    %a{:href => "job.html"} C# .NET Developer
+                    %small.label.label-info Freelance
+                  %p Microsoft Corp.
+                %td.job-location
+                  %p
+                    %i.glyphicon.glyphicon-calendar
+                    22 Dec 2013
+                  %p
+                    %i.glyphicon.glyphicon-map-marker
+                    Cape Town, South Africa
+          .pull-right
+            %ul.pagination
+              %li
+                %a{:href => "#"} «
+              %li.active
+                %span 1
+              %li
+                %a{:href => "#"} 2
+              %li
+                %a{:href => "#"} 3
+              %li
+                %a{:href => "#"} 4
+              %li
+                %a{:href => "#"} 5
+              %li
+                %a{:href => "#"} »
+/ /.contents
+/ the botom client image
+.clients
+  .container
+    %img.img-responsive{:alt => "clients", :src => "img/clients.png"}/
+/ the footer
+%footer
+  .container
+    %p.pull-left About | Terms | Privacy | FAQ | Support | Contact
+    %p.pull-right © Company 2013

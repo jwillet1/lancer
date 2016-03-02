@@ -1,0 +1,22 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    %title Job Portal
+    / styles
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    / fav and touch icons
+    %link{:href => "#", :rel => "shortcut icon"}/
+    %link{:href => "#", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}/
+    %link{:href => "#", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
+    %link{:href => "#", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
+    %link{:href => "#", :rel => "apple-touch-icon-precomposed"}/
+  %body
+    = yield
