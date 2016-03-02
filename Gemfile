@@ -16,6 +16,7 @@ gem 'faker', '~> 1.6', '>= 1.6.1'
 gem 'kaminari', '~> 0.16.3'
 gem 'font-awesome-rails', '~> 4.5', '>= 4.5.0.1'
 gem 'pg',             '0.18.4'
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
