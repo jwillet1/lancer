@@ -12,10 +12,12 @@
 #  created_at       :datetime
 #  updated_at       :datetime
 #  category_id      :integer
+#  user_id          :integer
 #
 # Indexes
 #
 #  index_gigs_on_category_id  (category_id)
+#  index_gigs_on_user_id      (user_id)
 #
 
 class Gig < ActiveRecord::Base
@@ -23,4 +25,5 @@ class Gig < ActiveRecord::Base
   has_many :abilities
   has_many :skills, through: :abilities
   belongs_to :category
+  belongs_to :user
 end
